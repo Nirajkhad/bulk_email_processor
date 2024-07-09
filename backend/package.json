@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js",
+    "dev:start": "nodemon server.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Nirajkhad/bulk_email_processor.git"
+  },
+  "author": "Niraj Khadka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nirajkhad/bulk_email_processor/issues"
+  },
+  "homepage": "https://github.com/Nirajkhad/bulk_email_processor#readme",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4",
+    "pg": "^8.12.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.3"
+},
+  "devDependencies": {
+    "sequelize-cli": "^6.6.2"
+  }
+}
