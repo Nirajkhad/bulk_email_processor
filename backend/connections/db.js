@@ -1,13 +1,13 @@
 const { Sequelize } = require('sequelize');
-const { DB_USERNAME, DB_PASSWORD, DB_DATABASE, DB_HOST, DB_DIALECT } = require('../config/config');
+const { development } = require('../config/config');
 
 const sequelize = new Sequelize(
-  DB_DATABASE,
-  DB_USERNAME,
-  DB_PASSWORD,
+  development.database,
+  development.username,
+  development.password,
   {
-    host: DB_HOST,
-    dialect: DB_DIALECT,
+    host: development.host,
+    dialect: development.dialect,
   }
 );
 
