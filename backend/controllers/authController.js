@@ -59,8 +59,11 @@ const login = async (req, res) => {
     }
     const { username, password } = req.body;
     const user = await getUserByUsernameOrEmail(username);
+    if(!user){
+      return res.status(404).json(errorResponse("s", 400));
+    }
     const isPasswordMatch = await user.comparePassword(password);
-    if(!user || !isPasswordMatch ){
+    if(!isPasswordMatch){
       return res.status(404).json(errorResponse("Invalid Credentials", 400));
     }
     await loginUser(user);
