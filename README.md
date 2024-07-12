@@ -22,6 +22,20 @@ Bulk Email Processor is a robust web application designed for efficient bulk ema
 
 ## Getting Started
 
+## API Documentation
+Explore the API Documentation on Postman for detailed information on available endpoints and usage.
+https://documenter.getpostman.com/view/16437456/2sA3e5dTVt
+
+## Frontend 
+Registration: http://localhost:3000/register
+Login: http://localhost:3000/login
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Acknowledgments
+Mention any contributors or libraries used that deserve acknowledgment.
+
 ### Prerequisites
 
 Ensure you have the following installed:
@@ -51,17 +65,3 @@ Build and run Docker containers
    npm cache clean --force
    npx sequelize db:migrate
    npx sequelize-cli db:seed:all
-
-### API Documentation
-Explore the API Documentation on Postman for detailed information on available endpoints and usage.
-https://documenter.getpostman.com/view/16437456/2sA3e5dTVt
-
-### Frontend 
-Registration: http://localhost:3000/register
-Login: http://localhost:3000/login
-
-### License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-Acknowledgments
-Mention any contributors or libraries used that deserve acknowledgment.
