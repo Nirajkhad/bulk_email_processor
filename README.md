@@ -22,6 +22,20 @@ Bulk Email Processor is a robust web application designed for efficient bulk ema
 
 ## Getting Started
 
+## API Documentation
+Explore the API Documentation on Postman for detailed information on available endpoints and usage.
+https://documenter.getpostman.com/view/16437456/2sA3e5dTVt
+
+## Frontend 
+Registration: http://localhost:3000/register
+Login: http://localhost:3000/login
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Acknowledgments
+Mention any contributors or libraries used that deserve acknowledgment.
+
 ### Prerequisites
 
 Ensure you have the following installed:
@@ -38,31 +52,16 @@ Ensure you have the following installed:
    cd bulk_email_processor
 Build and run Docker containers
 
-bash
-Copy code
-docker-compose up --build
-Access the backend container
+2. **Up the containers**
+   ```bash
+   docker-compose up --build
 
-bash
-Copy code
-docker exec -it backend bash
-Inside the backend container, clean npm cache and run migrations
+3. **Access the backend container**
+   ```
+   docker exec -it backend bash
 
-bash
-Copy code
-npm cache clean --force
-npx sequelize db:migrate
-npx sequelize-cli db:seed:all
-API Documentation
-Explore the API Documentation on Postman for detailed information on available endpoints and usage.
-
-Frontend (if applicable)
-If a frontend is included, access it using the following routes:
-
-Registration: http://localhost:3000/register
-Login: http://localhost:3000/login
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-Acknowledgments
-Mention any contributors or libraries used that deserve acknowledgment.
+4.  **Backend setup**
+   ```bash
+   npm cache clean --force
+   npx sequelize db:migrate
+   npx sequelize-cli db:seed:all
