@@ -8,9 +8,6 @@ RUN npm install
 
 COPY . .
 
-RUN npm cache clean --force
-
-RUN npx sequelize db:migrate 
 
 EXPOSE 8000
 
