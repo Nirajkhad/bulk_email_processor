@@ -52,15 +52,15 @@ Build and run Docker containers
    npx sequelize db:migrate
    npx sequelize-cli db:seed:all
 
-# API Documentation
+### API Documentation
 Explore the API Documentation on Postman for detailed information on available endpoints and usage.
 https://documenter.getpostman.com/view/16437456/2sA3e5dTVt
 
-# Frontend 
+### Frontend 
 Registration: http://localhost:3000/register
 Login: http://localhost:3000/login
 
-# License
+### License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 Acknowledgments
