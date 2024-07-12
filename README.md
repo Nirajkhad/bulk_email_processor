@@ -40,3 +40,18 @@ docker exec -it backend bash
 npm cache clean --force
 npx sequelize db:migrate
 npx sequelize-cli db:seed:all
+
+
+# API Endpoints
+https://documenter.getpostman.com/view/16437456/2sA3e5dTVt33
+
+# Front End
+
+Routes: 
+http://localhost:3000/regiter
+http://localhost:3000/login
+
+          
+
+
+
